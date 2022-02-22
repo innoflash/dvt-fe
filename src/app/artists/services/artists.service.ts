@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { forkJoin, Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { ArtistModel } from '../../shared/models/artist.model';
-import { SongModel } from '../../shared/models/song.model';
+import { TrackModel } from '../../shared/models/trackModel';
 import { BaseHttpService } from '../../shared/services/base-http.service';
 
 @Injectable({
@@ -44,5 +44,5 @@ export class ArtistsService extends BaseHttpService {
 }
 
 type SongsResponse = {
-  data: SongModel[]
+  data: TrackModel[]
 };

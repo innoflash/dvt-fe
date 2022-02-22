@@ -1,7 +1,7 @@
 import { AlbumModel } from './album.model';
 import { ArtistModel } from './artist.model';
 
-export interface SongModel {
+export interface TrackModel {
   id: number;
   readable: boolean;
   title: string;
