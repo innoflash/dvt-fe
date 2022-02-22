@@ -23,7 +23,6 @@ export class ArtistsListComponent implements OnInit {
     this.searchTerm = searchTerm;
     this.isLoading = true;
 
-    console.log({ searchTerm });
     this.artistsService.findArtists(searchTerm)
       .subscribe({
         next: res => this.artists = res,

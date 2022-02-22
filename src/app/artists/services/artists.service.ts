@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { forkJoin, Observable } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
 import { environment } from '../../../environments/environment';
 import { ArtistModel } from '../../shared/models/artist.model';
 import { SongModel } from '../../shared/models/song.model';
@@ -24,20 +24,26 @@ export class ArtistsService {
     return this.http.get<SongsResponse>(this.resolveUrl(`/search?q=artist:"${ encodeURI(searchTerm) }"`))
       .pipe(
         map(res => {
-          const artists = res.data.map(song => song.artist);
+          const artistsIds = res.data.map(song => song.artist.id);
 
-          const uniqueArtists: ArtistModel[] = [];
+          return artistsIds.filter((id, index, self) => self.indexOf(id) === index);
+        }),
+        switchMap(res => {
+          const artistObservables = res.map(artistId => this.getArtistDetails(artistId));
 
-          artists.forEach(artist => {
-            const uniqueArtistsArtist = uniqueArtists.find(a => a.id === artist.id);
-            if (!uniqueArtistsArtist) {
-              uniqueArtists.push(artist);
-            }
-          });
-
-          return uniqueArtists;
+          return forkJoin([...artistObservables]);
         })
       );
+  }
+
+  /**
+   * Fetches the profile of a single artist.
+   *
+   * @param {number} artistId
+   * @returns {Observable<ArtistModel>}
+   */
+  public getArtistDetails(artistId: number): Observable<ArtistModel> {
+    return this.http.get<ArtistModel>(this.resolveUrl(`/artist/${ artistId }`));
   }
 
   /**
