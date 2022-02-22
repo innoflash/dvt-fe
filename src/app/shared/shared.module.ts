@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArtistFanCountPipe } from './pipes/artist-fan-count.pipe';
 import { TrackDurationPipe } from './pipes/track-duration.pipe';
+import { AlbumYearPipe } from './pipes/album-year.pipe';
 
 
 
@@ -9,14 +10,16 @@ import { TrackDurationPipe } from './pipes/track-duration.pipe';
   declarations: [
     ArtistFanCountPipe,
     TrackDurationPipe,
-    TrackDurationPipe
+    TrackDurationPipe,
+    AlbumYearPipe
   ],
   imports: [
     CommonModule
   ],
   exports: [
     ArtistFanCountPipe,
-    TrackDurationPipe
+    TrackDurationPipe,
+    AlbumYearPipe
   ]
 })
 export class SharedModule { }

@@ -9,4 +9,5 @@ export interface AlbumModel {
   md5_image: string;
   tracklist: string;
   type: string;
+  release_date: string;
 }
