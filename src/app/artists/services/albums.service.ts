@@ -6,5 +6,5 @@ import { LoadsArtistDataService } from './loads-artist-data.service';
   providedIn: 'root'
 })
 export class AlbumsService extends LoadsArtistDataService<AlbumModel> {
-  protected resource: string = 'albums';
+  protected resource = 'albums';
 }

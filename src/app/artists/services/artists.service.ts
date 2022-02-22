@@ -13,8 +13,8 @@ export class ArtistsService extends BaseHttpService {
   /**
    * Searches artists from the Deezer API.
    *
-   * @param {string} searchTerm
-   * @returns {Observable<ArtistModel[]>}
+   * @param searchTerm The term send to the server for querying.
+   * @returns The artists pulled from the server.
    */
   public findArtists(searchTerm: string = ''): Observable<ArtistModel[]> {
     return this.http.get<SongsResponse>(this.resolveUrl(`/search?q=artist:"${ encodeURI(searchTerm) }"`))
@@ -35,8 +35,8 @@ export class ArtistsService extends BaseHttpService {
   /**
    * Fetches the profile of a single artist.
    *
-   * @param {number} artistId
-   * @returns {Observable<ArtistModel>}
+   * @param artistId The id of the artist.
+   * @returns The details of the artist.
    */
   public getArtistDetails(artistId: number): Observable<ArtistModel> {
     return this.http.get<ArtistModel>(this.resolveUrl(`/artist/${ artistId }`));

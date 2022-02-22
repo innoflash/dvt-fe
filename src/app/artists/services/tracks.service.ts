@@ -6,5 +6,5 @@ import { LoadsArtistDataService } from './loads-artist-data.service';
   providedIn: 'root'
 })
 export class TracksService extends LoadsArtistDataService<TrackModel> {
-  protected resource: string = 'top';
+  protected resource = 'top';
 }

@@ -12,8 +12,8 @@ export class BaseHttpService {
 
   /**
    * Adds root API to the given url.
-   * @param {string} url
-   * @returns {string}
+   * @param url The path to make the http request to.
+   * @returns The sanitized path.
    */
 
   protected resolveUrl(url: string): string {

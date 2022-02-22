@@ -74,7 +74,7 @@ export class ArtistDetailsComponent implements OnInit {
   /**
    * Re-opens the artist listing page.
    */
-  goBack() {
+  goBack(): void {
     this.router.navigate(['/']);
   }
 }

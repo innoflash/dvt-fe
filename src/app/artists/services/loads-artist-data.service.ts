@@ -12,8 +12,8 @@ export abstract class LoadsArtistDataService<T> extends BaseHttpService {
   /**
    * Fetches the data for the given resource for the given artist.
    *
-   * @param {number} artistId
-   * @returns {Observable<T[]>}
+   * @param artistId The id of the artist.
+   * @returns The data from of the artist.
    */
   public getData(artistId: number): Observable<T[]> {
     return this.http.get<DataResponse<T>>(this.resolveUrl(`/artist/${ artistId }/${ this.resource }`))
@@ -25,4 +25,4 @@ type DataResponse<T> = {
   data: T[];
   total: number;
   next: string;
-}
+};

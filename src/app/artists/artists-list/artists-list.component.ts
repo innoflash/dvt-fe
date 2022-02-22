@@ -19,7 +19,11 @@ export class ArtistsListComponent implements OnInit {
     this.findArtists();
   }
 
-  public findArtists(searchTerm: string = '') {
+  /**
+   * Searches the Deezer API for some artists.
+   * @param searchTerm the term to find on the server.
+   */
+  public findArtists(searchTerm: string = ''): void {
     this.searchTerm = searchTerm;
     this.isLoading = true;
     this.artists = [];

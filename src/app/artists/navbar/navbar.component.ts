@@ -9,7 +9,7 @@ import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 })
 export class NavbarComponent implements OnInit {
   public searchForm!: FormGroup;
-  @Output() public onSearchChange = new EventEmitter<string>();
+  @Output() public searchChange = new EventEmitter<string>();
 
   constructor(private fb: FormBuilder) {
   }
@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
         distinctUntilChanged()
       )
       .subscribe({
-        next: val => this.onSearchChange.emit(val)
+        next: val => this.searchChange.emit(val)
       });
   }
 
