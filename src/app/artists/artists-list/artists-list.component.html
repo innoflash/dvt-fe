@@ -12,7 +12,7 @@
         <img [src]="artist.picture_medium" class="card-img-top" [alt]="artist.name">
         <div class="card-body">
           <h5 class="card-title">{{ artist.name }}</h5>
-          <p class="card-text">345k fans</p>
+          <p class="card-text">{{ artist.nb_fan | artistFanCount }}</p>
           <span>{{ artist.nb_album }} album {{ artist.nb_album === 1 ? '' : 's'}}</span>
         </div>
       </div>
