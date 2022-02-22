@@ -1,8 +1,8 @@
-import { SongDurationPipe } from './song-duration.pipe';
+import { TrackDurationPipe } from './track-duration.pipe';
 
-describe('SongDurationPipe', () => {
+describe('TrackDurationPipe', () => {
   it('create an instance', () => {
-    const pipe = new SongDurationPipe();
+    const pipe = new TrackDurationPipe();
     expect(pipe).toBeTruthy();
   });
 });
