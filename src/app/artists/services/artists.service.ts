@@ -1,18 +1,14 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { forkJoin, Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
-import { environment } from '../../../environments/environment';
 import { ArtistModel } from '../../shared/models/artist.model';
 import { SongModel } from '../../shared/models/song.model';
+import { BaseHttpService } from '../../shared/services/base-http.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ArtistsService {
-
-  constructor(private http: HttpClient) {
-  }
+export class ArtistsService extends BaseHttpService {
 
   /**
    * Searches artists from the Deezer API.
@@ -44,18 +40,6 @@ export class ArtistsService {
    */
   public getArtistDetails(artistId: number): Observable<ArtistModel> {
     return this.http.get<ArtistModel>(this.resolveUrl(`/artist/${ artistId }`));
-  }
-
-  /**
-   * Adds root API to the given url.
-   * @param {string} url
-   * @returns {string}
-   */
-  private resolveUrl(url: string): string {
-    if (!environment.production) {
-      return `api${ url }`;
-    }
-    return url;
   }
 }
 
