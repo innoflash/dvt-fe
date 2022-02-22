@@ -22,6 +22,7 @@ export class ArtistsListComponent implements OnInit {
   public findArtists(searchTerm: string = '') {
     this.searchTerm = searchTerm;
     this.isLoading = true;
+    this.artists = [];
 
     this.artistsService.findArtists(searchTerm)
       .subscribe({
