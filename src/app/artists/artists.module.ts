@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ArtistsRoutingModule } from './artists-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,7 +16,8 @@ import { ArtistDetailsComponent } from './artist-details/artist-details.componen
   ],
   imports: [
     CommonModule,
-    ArtistsRoutingModule
+    ArtistsRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class ArtistsModule { }
