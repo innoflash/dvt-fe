@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { forkJoin } from 'rxjs';
 import { AlbumModel } from '../../shared/models/album.model';
 import { ArtistModel } from '../../shared/models/artist.model';
@@ -22,6 +22,7 @@ export class ArtistDetailsComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private artistsService: ArtistsService,
     private tracksService: TracksService,
     private albumsService: AlbumsService
@@ -68,5 +69,12 @@ export class ArtistDetailsComponent implements OnInit {
     this.artist = undefined;
     this.tracks = [];
     this.albums = [];
+  }
+
+  /**
+   * Re-opens the artist listing page.
+   */
+  goBack() {
+    this.router.navigate(['/']);
   }
 }

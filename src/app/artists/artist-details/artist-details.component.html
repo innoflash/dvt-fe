@@ -1,4 +1,26 @@
-<app-navbar></app-navbar>
+<app-navbar (onSearchChange)="goBack()"></app-navbar>
 <div class="container">
   <img src="/assets/images/loading.gif" class="img-fluid" *ngIf="isLoading"/>
+  <ng-container *ngIf="artist">
+    <div class="row mt-3">
+      <div class="col-md-8">
+        fsdlkd fdslkf; dskfldsjfld sjfsd fdsjfd sjfl;dsj fds jlf;dsjlfj dsfjdl;f sdfjsdl;fj ds;lfjdsl; fjsdl;f jdsl;fjsdl;fsd;lfjdsfdsfdsjf
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Top tracks</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let track of tracks; let i = index">
+              <span>
+                <b>{{ i + 1 }}.</b> {{ track.title_short }}
+              </span>
+              <span class="badge badge-primary badge-pill">{{ track.duration | trackDuration }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ng-container>
 </div>
