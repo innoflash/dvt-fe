@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { environment } from '../../../environments/environment';
-import { ArtistModel } from '../../models/artist.model';
-import { SongModel } from '../../models/song.model';
+import { ArtistModel } from '../../shared/models/artist.model';
+import { SongModel } from '../../shared/models/song.model';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +26,16 @@ export class ArtistsService {
         map(res => {
           const artists = res.data.map(song => song.artist);
 
-          return [...new Set(artists)];
+          const uniqueArtists: ArtistModel[] = [];
+
+          artists.forEach(artist => {
+            const uniqueArtistsArtist = uniqueArtists.find(a => a.id === artist.id);
+            if (!uniqueArtistsArtist) {
+              uniqueArtists.push(artist);
+            }
+          });
+
+          return uniqueArtists;
         })
       );
   }
