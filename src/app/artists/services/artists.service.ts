@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { forkJoin, Observable } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { ArtistModel } from '../../shared/models/artist.model';
-import { TrackModel } from '../../shared/models/trackModel';
+import { TrackModel } from '../../shared/models/track.model';
 import { BaseHttpService } from '../../shared/services/base-http.service';
 
 @Injectable({
