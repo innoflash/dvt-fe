@@ -16,18 +16,29 @@ export class ArtistFanCountPipe implements PipeTransform {
       return '1 fan';
     }
 
-    if (fanCountAsString.length < 4) {
+    if (fans < 1000) {
       return `${ fans } fans`;
     }
 
-    if (fanCountAsString.length < 7) {
-      return `${ Math.round(fans / 1000) }k fans`;
+    if (fans < 1000000) {
+      return this.roundUpFanCount(fans, 1000, 'k', 'M');
     }
 
-    if (fanCountAsString.length < 10) {
-      return `${ Math.round(fans / 1000000) }M fans`;
+    if (fans < 1000000000) {
+      return this.roundUpFanCount(fans, 1000000, 'M', 'B');
     }
+
     return `${ Math.round(fans / 1000000000) }B fans`;
+  }
+
+  private roundUpFanCount(fans: number, divident: number, fanSymbol: string, nextFanSymbol: string): string {
+    const fanCount = Math.round(fans / divident);
+
+    if (fanCount % 10 !== 0) {
+      return `${ fanCount }${ fanSymbol } fans`;
+    }
+
+    return `1${ nextFanSymbol } fans`;
   }
 
 }

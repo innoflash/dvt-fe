@@ -1,10 +1,8 @@
 import { TrackDurationPipe } from './track-duration.pipe';
 
-fdescribe('TrackDurationPipe', () => {
+describe('TrackDurationPipe', () => {
   let pipe: TrackDurationPipe;
-  beforeEach(() => {
-    pipe = new TrackDurationPipe();
-  });
+  beforeEach(() => pipe = new TrackDurationPipe());
 
   it('create an instance', () => expect(pipe).toBeTruthy());
 
