@@ -8,5 +8,4 @@ export class AlbumYearPipe implements PipeTransform {
   transform(releaseDate: string, ...args: unknown[]): string {
     return releaseDate.split('-')[0];
   }
-
 }
