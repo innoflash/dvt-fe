@@ -14,10 +14,10 @@ export class ArtistsHelper {
     this.artist = {
       id: artistId,
       name: faker.name.firstName(),
-      picture: faker.internet.url(),
-      picture_small: faker.internet.url(),
-      picture_medium: faker.internet.url(),
-      picture_xl: faker.internet.url(),
+      picture: faker.image.imageUrl(),
+      picture_small: faker.image.imageUrl(),
+      picture_medium: faker.image.imageUrl(),
+      picture_xl: faker.image.imageUrl(),
       nb_album: faker.datatype.number(),
       nb_fan: faker.datatype.number()
     };

@@ -4,7 +4,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { BaseHttpService } from './base-http.service';
 
-fdescribe('BaseHttpService', () => {
+describe('BaseHttpService', () => {
   let service: TestBaseHttpService;
 
   beforeEach(() => {
