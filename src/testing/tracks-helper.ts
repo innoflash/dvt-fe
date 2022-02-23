@@ -21,6 +21,7 @@ export class TracksHelper {
     this.track = {
       id: faker.datatype.number(),
       title: faker.lorem.words(),
+      title_short: faker.lorem.words(),
       duration: faker.datatype.number(480),
       artist: this.artistHelper.generateArtist(artistId) as ArtistModel
     };

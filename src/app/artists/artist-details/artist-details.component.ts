@@ -39,6 +39,13 @@ export class ArtistDetailsComponent implements OnInit {
   }
 
   /**
+   * Re-opens the artist listing page.
+   */
+  public goBack(): void {
+    this.router.navigate(['/']);
+  }
+
+  /**
    * Loads the required artist details.
    */
   private loadArtistDetails(): void {
@@ -69,12 +76,5 @@ export class ArtistDetailsComponent implements OnInit {
     this.artist = undefined;
     this.tracks = [];
     this.albums = [];
-  }
-
-  /**
-   * Re-opens the artist listing page.
-   */
-  goBack(): void {
-    this.router.navigate(['/']);
   }
 }

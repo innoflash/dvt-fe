@@ -13,7 +13,7 @@ import { ArtistsService } from '../services/artists.service';
 
 import { ArtistsListComponent } from './artists-list.component';
 
-fdescribe('ArtistsListComponent', () => {
+describe('ArtistsListComponent', () => {
   let component: ArtistsListComponent;
   let fixture: ComponentFixture<ArtistsListComponent>;
   let debugElement: DebugElement;

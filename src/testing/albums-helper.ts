@@ -13,7 +13,7 @@ export class AlbumsHelper {
     this.album = {
       id: faker.datatype.number(),
       title: faker.lorem.words(),
-      release_date: faker.datatype.datetime().toString(),
+      release_date: this.formatDate(faker.datatype.datetime()),
       cover_big: faker.image.imageUrl()
     };
 
@@ -30,6 +30,16 @@ export class AlbumsHelper {
     for (let i = 0; i < numOfAlbums; i++) {
       this.albums.push(this.generateAlbum());
     }
+
     return this.albums!;
+  }
+
+  /**
+   * Formats the date to the way its done by the Deezer API.
+   * @param date The date
+   * @returns The formatted date.
+   */
+  private formatDate(date: Date): string {
+    return `${ date.getFullYear() }-${ date.getMonth() }-${ date.getDate() }`;
   }
 }

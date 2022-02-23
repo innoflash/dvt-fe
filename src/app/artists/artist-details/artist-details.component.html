@@ -33,7 +33,8 @@
             <li class="list-group-item d-flex justify-content-between align-items-center"
                 *ngFor="let track of tracks; let i = index">
               <span>
-                <b>{{ i + 1 }}.</b> {{ track.title_short }}
+                <b>{{ i + 1 }}.</b>
+                <span>{{ track.title_short }}</span>
               </span>
               <span class="badge badge-primary badge-pill">{{ track.duration | trackDuration }}</span>
             </li>
@@ -42,7 +43,7 @@
       </div>
     </div>
 
-    <div class="row mt-3">
+    <div class="row mt-3 albums">
       <div class="col-md-3 mb-2" *ngFor="let album of albums">
         <div class="card">
           <img [src]="album.cover_big" class="card-img-top" [alt]="album.title">
