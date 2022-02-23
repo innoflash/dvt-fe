@@ -1,4 +1,5 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { Injectable } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 
 import { BaseHttpService } from './base-http.service';
@@ -23,6 +24,7 @@ fdescribe('BaseHttpService', () => {
   it('should append /api to the given route.', () => expect(service.url).toBe('api/url'));
 });
 
+@Injectable()
 class TestBaseHttpService extends BaseHttpService {
   public url = this.resolveUrl('/url');
 };

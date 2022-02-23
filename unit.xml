@@ -1,54 +1,11 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T08:19:11" id="0" hostname="innoflash" tests="27" errors="0" failures="0" time="0.023">
+<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T09:04:09" id="0" hostname="innoflash" tests="26" errors="0" failures="0" time="0.02">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"/>
   </properties>
-  <testcase name="TracksService should be created" time="0.016" classname="unit.TracksService"/>
-  <testcase name="TracksService should calls the http service" time="0" classname="unit.TracksService">
-    <skipped/>
-  </testcase>
-  <testcase name="TracksService should get artist tracks" time="0" classname="unit.TracksService">
-    <skipped/>
-  </testcase>
+  <testcase name="BaseHttpService should be created" time="0.016" classname="unit.BaseHttpService"/>
   <testcase name="BaseHttpService should append /api to the given route." time="0.004" classname="unit.BaseHttpService"/>
-  <testcase name="BaseHttpService should be created" time="0.003" classname="unit.BaseHttpService"/>
-  <testcase name="ArtistsService should be created" time="0" classname="unit.ArtistsService">
-    <skipped/>
-  </testcase>
-  <testcase name="TrackDurationPipe create an instance" time="0" classname="unit.TrackDurationPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="TrackDurationPipe should pad minutes on time" time="0" classname="unit.TrackDurationPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="TrackDurationPipe should transform a time" time="0" classname="unit.TrackDurationPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="ArtistFanCountPipe should not format less than 1000 fans" time="0" classname="unit.ArtistFanCountPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="ArtistFanCountPipe create an instance" time="0" classname="unit.ArtistFanCountPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="ArtistFanCountPipe should format thousands of fans to K fans" time="0" classname="unit.ArtistFanCountPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="ArtistFanCountPipe should show 1 fan when artist has one" time="0" classname="unit.ArtistFanCountPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="ArtistFanCountPipe should format millions of fans to M fans" time="0" classname="unit.ArtistFanCountPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="ArtistFanCountPipe should show no fans if non provided" time="0" classname="unit.ArtistFanCountPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="ArtistFanCountPipe should format billions of fans to B fans" time="0" classname="unit.ArtistFanCountPipe">
-    <skipped/>
-  </testcase>
-  <testcase name="PageNotFoundComponent should create" time="0" classname="unit.PageNotFoundComponent">
+  <testcase name="ArtistDetailsComponent should create" time="0" classname="unit.ArtistDetailsComponent">
     <skipped/>
   </testcase>
   <testcase name="AlbumYearPipe should get a year from the release date" time="0" classname="unit.AlbumYearPipe">
@@ -57,19 +14,43 @@
   <testcase name="AlbumYearPipe create an instance" time="0" classname="unit.AlbumYearPipe">
     <skipped/>
   </testcase>
-  <testcase name="ArtistDetailsComponent should create" time="0" classname="unit.ArtistDetailsComponent">
+  <testcase name="ArtistFanCountPipe should format millions of fans to M fans" time="0" classname="unit.ArtistFanCountPipe">
     <skipped/>
   </testcase>
-  <testcase name="ArtistsListComponent should create" time="0" classname="unit.ArtistsListComponent">
+  <testcase name="ArtistFanCountPipe should show no fans if non provided" time="0" classname="unit.ArtistFanCountPipe">
     <skipped/>
   </testcase>
-  <testcase name="NavbarComponent should create" time="0" classname="unit.NavbarComponent">
+  <testcase name="ArtistFanCountPipe should format thousands of fans to K fans" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe create an instance" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should not format less than 1000 fans" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should format billions of fans to B fans" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should show 1 fan when artist has one" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="PageNotFoundComponent should create" time="0" classname="unit.PageNotFoundComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="TracksService should be created" time="0" classname="unit.TracksService">
+    <skipped/>
+  </testcase>
+  <testcase name="TracksService should get artist tracks" time="0" classname="unit.TracksService">
     <skipped/>
   </testcase>
   <testcase name="AlbumsService should be created" time="0" classname="unit.AlbumsService">
     <skipped/>
   </testcase>
-  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0" classname="unit.AppComponent">
+  <testcase name="ArtistsListComponent should create" time="0" classname="unit.ArtistsListComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistsService should be created" time="0" classname="unit.ArtistsService">
     <skipped/>
   </testcase>
   <testcase name="AppComponent should render title" time="0" classname="unit.AppComponent">
@@ -78,12 +59,26 @@
   <testcase name="AppComponent should create the app" time="0" classname="unit.AppComponent">
     <skipped/>
   </testcase>
+  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="NavbarComponent should create" time="0" classname="unit.NavbarComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackDurationPipe should pad minutes on time" time="0" classname="unit.TrackDurationPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackDurationPipe should transform a time" time="0" classname="unit.TrackDurationPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackDurationPipe create an instance" time="0" classname="unit.TrackDurationPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe">
+    <skipped/>
+  </testcase>
   <system-out>
-    <![CDATA[Chrome 98.0.4758.102 (Linux x86_64) WARN: 'DEPRECATED: DI is instantiating a token "TestBaseHttpService" that inherits its @Injectable decorator but does not provide one itself.
-This will become an error in a future version of Angular. Please add @Injectable() to the "TestBaseHttpService" class.'
-,Chrome 98.0.4758.102 (Linux x86_64) WARN: 'DEPRECATED: DI is instantiating a token "TestBaseHttpService" that inherits its @Injectable decorator but does not provide one itself.
-This will become an error in a future version of Angular. Please add @Injectable() to the "TestBaseHttpService" class.'
-
+    <![CDATA[
 ]]>
   </system-out>
   <system-err/>
