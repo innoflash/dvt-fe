@@ -38,7 +38,7 @@ describe('TracksService', () => {
     expect(req.request.method).toBe('GET');
 
     req.flush({
-      data: tracksHelper.generateTracks(1, 5)
+      data: tracksHelper.generateTracks(5, 1)
     });
     httpTestingController.verify();
   });

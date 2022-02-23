@@ -30,14 +30,14 @@ export class TracksHelper {
   /**
    * Generates tracks for an artist.
    *
-   * @param artistId The id of the artist.
    * @param numOfTracks Number of tracks
+   * @param artistId The id of the artist.
    * @returns The tracks for the artist.
    */
-  public generateTracks(artistId: number, numOfTracks: number): Partial<TrackModel>[] {
+  public generateTracks(numOfTracks: number, artistId?: number): Partial<TrackModel>[] {
     this.tracks = [];
     for (let i = 0; i < numOfTracks; i++) {
-      this.tracks.push(this.generateTrack(artistId));
+      this.tracks.push(this.generateTrack(artistId || i++));
     }
     return this.tracks!;
   }

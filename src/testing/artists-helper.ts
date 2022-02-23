@@ -3,6 +3,7 @@ import { ArtistModel } from '../app/shared/models/artist.model';
 
 export class ArtistsHelper {
   public artist?: Partial<ArtistModel>;
+  public artists?: Partial<ArtistModel>[];
 
   /**
    * Creates an artist with the given id.
@@ -22,5 +23,18 @@ export class ArtistsHelper {
       nb_fan: faker.datatype.number()
     };
     return this.artist!;
+  }
+
+  /**
+   * Generates artists.
+   * @param numOfArtists Number of artists.
+   * @returns The artists generated.
+   */
+  public generateArtists(numOfArtists: number): Partial<ArtistModel>[] {
+    this.artists = [];
+    for (let i = 0; i < numOfArtists; i++) {
+      this.artists.push(this.generateArtist(i + 1));
+    }
+    return this.artists!;
   }
 }
