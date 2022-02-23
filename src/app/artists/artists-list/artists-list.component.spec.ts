@@ -70,7 +70,7 @@ describe('ArtistsListComponent', () => {
   describe('Showing of artists', () => {
     beforeEach(() => artistsHelper = new ArtistsHelper());
 
-    it('should hide loading and error when artists are found', function () {
+    it('should hide loading and error when artists are found', () => {
       component.artists = [artistsHelper.generateArtist(1) as ArtistModel];
       fixture.detectChanges();
 
@@ -92,7 +92,7 @@ describe('ArtistsListComponent', () => {
         artistCard = artistAnchors[0];
       });
 
-      it('should show one artist', function () {
+      it('should show one artist', () => {
         expect(artistAnchors).toBeTruthy();
         expect(artistAnchors.length).toBe(1);
       });
@@ -127,7 +127,9 @@ describe('ArtistsListComponent', () => {
         spyOn(router, 'navigateByUrl');
         artistCard.nativeElement.click();
 
-        expect(router.navigateByUrl).toHaveBeenCalledOnceWith(router.createUrlTree(['/artists/1']), { skipLocationChange: false, replaceUrl: false, state: undefined });
+        expect(router.navigateByUrl).toHaveBeenCalledOnceWith(
+          router.createUrlTree(['/artists/1']), { skipLocationChange: false, replaceUrl: false, state: undefined }
+        );
       });
     });
 

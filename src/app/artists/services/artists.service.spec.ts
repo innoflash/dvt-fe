@@ -24,7 +24,7 @@ describe('ArtistsService', () => {
 
   it('should be created', () => expect(service).toBeTruthy());
 
-  it('should get artist details', function () {
+  it('should get artist details', () => {
     service.getArtistDetails(1)
       .subscribe({
         next: artist => {

@@ -26,7 +26,7 @@ describe('AlbumsService', () => {
     service.getData(1).subscribe({
       next: res => {
         expect(res).toBeTruthy('No albums found!');
-        expect(res.length).toBe(5, "incorrect number of albums");
+        expect(res.length).toBe(5, 'incorrect number of albums');
       },
       error: err => console.log(err)
     });

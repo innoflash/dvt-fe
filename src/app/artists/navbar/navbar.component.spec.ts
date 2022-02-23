@@ -35,7 +35,7 @@ describe('NavbarComponent', () => {
     expect(aTag.nativeElement.textContent).toBe('Deezer');
   });
 
-  it('should have a form', function () {
+  it('should have a form', () => {
     const formTag = fixture.debugElement.query(By.css('form'));
     expect(formTag).toBeTruthy();
   });
@@ -44,7 +44,7 @@ describe('NavbarComponent', () => {
     const formTag = fixture.debugElement.query(By.css('form'));
     const inputTag = formTag.query(By.css('input'));
 
-    expect(inputTag.attributes['formControlName']).toBe('searchTerm');
+    expect(inputTag.attributes.formControlName).toBe('searchTerm');
   });
 
   it('should emit a value when one is entered', fakeAsync(() => {
@@ -61,7 +61,7 @@ describe('NavbarComponent', () => {
     inputTag.nativeElement.value = 'test';
     inputTag.nativeElement.dispatchEvent(event);
 
-    //expect(component.searchChange.emit).toHaveBeenCalledOnceWith('test');
+    // expect(component.searchChange.emit).toHaveBeenCalledOnceWith('test');
     pending('Skipping coz i cant test value emission');
   }));
 

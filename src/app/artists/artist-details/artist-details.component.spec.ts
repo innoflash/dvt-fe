@@ -83,24 +83,24 @@ describe('ArtistDetailsComponent', () => {
       fixture.detectChanges();
     });
 
-    it('should hide the loading spinner', function () {
+    it('should hide the loading spinner', () => {
       const img = debugElement.query(By.css('img .img-fluid'));
       expect(img).toBeFalsy();
     });
 
-    it('should show artist`s picture', function () {
+    it('should show artist`s picture', () => {
       const img = debugElement.query(By.css('img'));
       expect(img).toBeTruthy();
       expect(img.attributes.src).toBeTruthy();
     });
 
-    it('should show artist`s name', function () {
+    it('should show artist`s name', () => {
       const nameH1 = debugElement.query(By.css('.row h1'));
       expect(nameH1).toBeTruthy();
       expect(nameH1.nativeElement.textContent).toBe(artistsHelper.artist?.name);
     });
 
-    it('should show artist`s fan count', function () {
+    it('should show artist`s fan count', () => {
       const fanCountH5 = debugElement.query(By.css('.row h5'));
       expect(fanCountH5).toBeTruthy();
       expect(fanCountH5.nativeElement.textContent).toBe(
@@ -127,7 +127,7 @@ describe('ArtistDetailsComponent', () => {
       trackElement = tracksList[0];
     });
 
-    it('should show 5 tracks', function () {
+    it('should show 5 tracks', () => {
       expect(tracksList).toBeTruthy();
       expect(tracksList.length).toBe(5);
     });
@@ -174,13 +174,13 @@ describe('ArtistDetailsComponent', () => {
       expect(albumElement).toBeTruthy();
       const imgTag = albumElement.query(By.css('img'));
       expect(imgTag).toBeTruthy();
-      expect(imgTag.attributes.src).toBe(albumsHelper.albums![0].cover_big as string)
+      expect(imgTag.attributes.src).toBe(albumsHelper.albums![0].cover_big as string);
     });
 
     it('should the album name', () => {
       const nameH5 = albumElement.query(By.css('h5'));
       expect(nameH5).toBeTruthy();
-      expect(nameH5.nativeElement.textContent).toBe(albumsHelper.albums![0].title as string)
+      expect(nameH5.nativeElement.textContent).toBe(albumsHelper.albums![0].title as string);
     });
 
     it('should show a transformed release year', () => {
@@ -188,7 +188,7 @@ describe('ArtistDetailsComponent', () => {
       expect(yearPara).toBeTruthy();
       expect(yearPara.nativeElement.textContent).toBe(
         new AlbumYearPipe().transform(albumsHelper.albums![0].release_date as string)
-      )
+      );
     });
   });
 });

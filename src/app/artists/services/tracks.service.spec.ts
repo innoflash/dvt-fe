@@ -21,11 +21,11 @@ describe('TracksService', () => {
 
   it('should be created', () => expect(service).toBeTruthy());
 
-  it('should get artist tracks', function () {
+  it('should get artist tracks', () => {
     service.getData(1).subscribe({
       next: res => {
         expect(res).toBeTruthy('No tracks found!');
-        expect(res.length).toBe(5, "incorrect number of tracks");
+        expect(res.length).toBe(5, 'incorrect number of tracks');
         const artistMusic = res.filter(track => track.artist.id === 1);
 
         expect(artistMusic).toBeTruthy();

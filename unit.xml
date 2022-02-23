@@ -1,107 +1,71 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T12:57:06" id="0" hostname="innoflash" tests="55" errors="0" failures="0" time="0.389">
+<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T13:09:11" id="0" hostname="innoflash" tests="55" errors="0" failures="0" time="0.519">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"/>
   </properties>
-  <testcase name="ArtistsListComponent Showing of artists should show 10 artists on the screen" time="0.074" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist`s number of albums" time="0.011" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist fan count" time="0.011" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should navigate to the artist details page" time="0.008" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show one artist" time="0.01" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show name on an h5" time="0.009" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist image" time="0.006" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent Showing of artists should hide loading and error when artists are found" time="0.006" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent should load artists from the server when page loads" time="0.007" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent should show results not found if none are found" time="0.006" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent should show loading when data is still pending" time="0.005" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistsListComponent should create" time="0.005" classname="unit.ArtistsListComponent"/>
-  <testcase name="ArtistDetailsComponent should show loading when the profile is not loaded yet" time="0.021" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent should create" time="0.009" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist albums should show 5 albums" time="0.015" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist albums should show a transformed release year" time="0.011" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist albums should the album name" time="0.013" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist albums should show an album cover" time="0.008" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist details should hide the loading spinner" time="0.011" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist details should show artist`s fan count" time="0.006" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist details should show artist`s picture" time="0.006" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist details should show artist`s name" time="0.011" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist tracks should show the track time" time="0.01" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist tracks should show track name and number" time="0.007" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="ArtistDetailsComponent Show artist tracks should show 5 tracks" time="0.012" classname="unit.ArtistDetailsComponent"/>
-  <testcase name="AlbumYearPipe create an instance" time="0.001" classname="unit.AlbumYearPipe"/>
-  <testcase name="AlbumYearPipe should get a year from the release date" time="0.001" classname="unit.AlbumYearPipe"/>
-  <testcase name="NavbarComponent should create" time="0.015" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should be inside a nav tag" time="0.009" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should have an input with reactive forms" time="0.008" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should emit a value when one is entered" time="0" classname="unit.NavbarComponent">
-    <skipped/>
-  </testcase>
-  <testcase name="NavbarComponent should have the logo titled Deezer" time="0.007" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should have a form" time="0.005" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should initializes the searchForm" time="0.007" classname="unit.NavbarComponent"/>
-  <testcase name="TrackDurationPipe should transform a time" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe create an instance" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe should pad minutes on time" time="0.001" classname="unit.TrackDurationPipe"/>
-  <testcase name="ArtistFanCountPipe should format billions of fans to B fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should format millions of fans to M fans" time="0.009" classname="unit.ArtistFanCountPipe"/>
   <testcase name="ArtistFanCountPipe create an instance" time="0.001" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should show no fans if non provided" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should format thousands of fans to K fans" time="0.002" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should format millions of fans to M fans" time="0" classname="unit.ArtistFanCountPipe"/>
   <testcase name="ArtistFanCountPipe should show 1 fan when artist has one" time="0.001" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should not format less than 1000 fans" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="BaseHttpService should be created" time="0.003" classname="unit.BaseHttpService"/>
-  <testcase name="BaseHttpService should append /api to the given route." time="0.001" classname="unit.BaseHttpService"/>
-  <testcase name="ArtistsService should get artist details" time="0.01" classname="unit.ArtistsService"/>
-  <testcase name="ArtistsService should be created" time="0.002" classname="unit.ArtistsService"/>
+  <testcase name="ArtistFanCountPipe should not format less than 1000 fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should format thousands of fans to K fans" time="0" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should show no fans if non provided" time="0" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should format billions of fans to B fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="AlbumYearPipe create an instance" time="0.001" classname="unit.AlbumYearPipe"/>
+  <testcase name="AlbumYearPipe should get a year from the release date" time="0.002" classname="unit.AlbumYearPipe"/>
+  <testcase name="TrackDurationPipe should transform a time" time="0.001" classname="unit.TrackDurationPipe"/>
+  <testcase name="TrackDurationPipe should pad minutes on time" time="0" classname="unit.TrackDurationPipe"/>
+  <testcase name="TrackDurationPipe create an instance" time="0.001" classname="unit.TrackDurationPipe"/>
+  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe"/>
   <testcase name="ArtistsService should search for artists" time="0" classname="unit.ArtistsService">
     <skipped/>
   </testcase>
-  <testcase name="AlbumsService should get artist albums" time="0.003" classname="unit.AlbumsService"/>
-  <testcase name="AlbumsService should be created" time="0.001" classname="unit.AlbumsService"/>
-  <testcase name="PageNotFoundComponent should create" time="0.003" classname="unit.PageNotFoundComponent"/>
-  <testcase name="TracksService should get artist tracks" time="0.006" classname="unit.TracksService"/>
-  <testcase name="TracksService should be created" time="0.003" classname="unit.TracksService"/>
+  <testcase name="ArtistsService should get artist details" time="0.006" classname="unit.ArtistsService"/>
+  <testcase name="ArtistsService should be created" time="0.003" classname="unit.ArtistsService"/>
+  <testcase name="ArtistDetailsComponent Show artist albums should show a transformed release year" time="0.083" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist albums should show an album cover" time="0.031" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist albums should the album name" time="0.018" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist albums should show 5 albums" time="0.021" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist details should show artist`s fan count" time="0.01" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist details should show artist`s picture" time="0.016" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist details should show artist`s name" time="0.013" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist details should hide the loading spinner" time="0.008" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist tracks should show 5 tracks" time="0.015" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist tracks should show track name and number" time="0.016" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent Show artist tracks should show the track time" time="0.014" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent should show loading when the profile is not loaded yet" time="0.013" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="ArtistDetailsComponent should create" time="0.01" classname="unit.ArtistDetailsComponent"/>
+  <testcase name="AlbumsService should get artist albums" time="0.007" classname="unit.AlbumsService"/>
+  <testcase name="AlbumsService should be created" time="0.004" classname="unit.AlbumsService"/>
+  <testcase name="PageNotFoundComponent should create" time="0.01" classname="unit.PageNotFoundComponent"/>
+  <testcase name="TracksService should be created" time="0.004" classname="unit.TracksService"/>
+  <testcase name="TracksService should get artist tracks" time="0.003" classname="unit.TracksService"/>
+  <testcase name="NavbarComponent should have the logo titled Deezer" time="0.018" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should be inside a nav tag" time="0.008" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should initializes the searchForm" time="0.006" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should emit a value when one is entered" time="0" classname="unit.NavbarComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="NavbarComponent should create" time="0.008" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should have an input with reactive forms" time="0.007" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should have a form" time="0.007" classname="unit.NavbarComponent"/>
+  <testcase name="ArtistsListComponent should create" time="0.016" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent should load artists from the server when page loads" time="0.005" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent should show loading when data is still pending" time="0.007" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent should show results not found if none are found" time="0.004" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists should hide loading and error when artists are found" time="0.013" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists should show 10 artists on the screen" time="0.018" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show name on an h5" time="0.009" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist`s number of albums" time="0.013" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist fan count" time="0.011" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show one artist" time="0.01" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should navigate to the artist details page" time="0.014" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist image" time="0.012" classname="unit.ArtistsListComponent"/>
+  <testcase name="BaseHttpService should be created" time="0.006" classname="unit.BaseHttpService"/>
+  <testcase name="BaseHttpService should append /api to the given route." time="0.004" classname="unit.BaseHttpService"/>
   <system-out>
     <![CDATA[Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
 1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
 2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 98.0.4758.102 (Linux x86_64) ALERT: 'You provided 'undefined' where a stream was expected. You can provide an Observable, Promise, Array, or Iterable.'
 ,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
 1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
@@ -151,6 +115,42 @@
 1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
 2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome 98.0.4758.102 (Linux x86_64) ALERT: 'You provided 'undefined' where a stream was expected. You can provide an Observable, Promise, Array, or Iterable.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 
 ]]>
   </system-out>

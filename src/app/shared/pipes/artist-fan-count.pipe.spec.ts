@@ -16,7 +16,7 @@ describe('ArtistFanCountPipe', () => {
     expect(pipe.transform(999)).toBe('999 fans');
   });
 
-  it('should format thousands of fans to K fans', function () {
+  it('should format thousands of fans to K fans', () => {
     expect(pipe.transform(1000)).toBe('1k fans');
     expect(pipe.transform(104900)).toBe('105k fans');
     expect(pipe.transform(999999)).toBe('1M fans');

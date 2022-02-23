@@ -12,7 +12,7 @@ describe('BaseHttpService', () => {
       imports: [
         HttpClientTestingModule
       ],
-      providers:[
+      providers: [
         TestBaseHttpService
       ]
     });
@@ -27,4 +27,4 @@ describe('BaseHttpService', () => {
 @Injectable()
 class TestBaseHttpService extends BaseHttpService {
   public url = this.resolveUrl('/url');
-};
+}
