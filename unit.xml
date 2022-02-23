@@ -1,193 +1,50 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-22T18:52:52" id="0" hostname="innoflash" tests="14" errors="0" failures="8" time="0.244">
+<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T07:38:57" id="0" hostname="innoflash" tests="17" errors="0" failures="0" time="0.001">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"/>
   </properties>
-  <testcase name="AlbumYearPipe create an instance" time="0.004" classname="unit.AlbumYearPipe"/>
-  <testcase name="NavbarComponent should create" time="0.13" classname="unit.NavbarComponent">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[FormBuilder -&gt; FormBuilder]: 
-  NullInjectorError: No provider for FormBuilder!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'FormBuilder', 'FormBuilder' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[FormBuilder -&gt; FormBuilder]: 
-  NullInjectorError: No provider for FormBuilder!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25013:1)
-    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
-    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
-    at ɵɵdirectiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14693:1)
-    at NodeInjectorFactory.NavbarComponent_Factory [as factory] (ng:///NavbarComponent/ɵfac.js:4:43)
-    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/navbar/navbar.component.spec.ts:23:23)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
-  </testcase>
-  <testcase name="ArtistFanCountPipe create an instance" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="BaseHttpService should be created" time="0.008" classname="unit.BaseHttpService">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[BaseHttpService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'BaseHttpService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[BaseHttpService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
-    at ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
-    at Object.BaseHttpService_Factory [as factory] (ng:///BaseHttpService/ɵfac.js:4:43)
-    at R3Injector.hydrate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11438:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11258:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at TestBedRender3.inject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:1686:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/shared/services/base-http.service.spec.ts:14:21)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
-  </testcase>
-  <testcase name="ArtistDetailsComponent should create" time="0.035" classname="unit.ArtistDetailsComponent">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
-  NullInjectorError: No provider for ActivatedRoute!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActivatedRoute', 'ActivatedRoute' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
-  NullInjectorError: No provider for ActivatedRoute!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25013:1)
-    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
-    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
-    at ɵɵdirectiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14693:1)
-    at NodeInjectorFactory.ArtistDetailsComponent_Factory [as factory] (ng:///ArtistDetailsComponent/ɵfac.js:4:50)
-    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/artist-details/artist-details.component.spec.ts:23:23)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
-  </testcase>
-  <testcase name="ArtistsListComponent should create" time="0.016" classname="unit.ArtistsListComponent">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistsService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ArtistsService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistsService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
-    at ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
-    at Object.ArtistsService_Factory [as factory] (ng:///ArtistsService/ɵfac.js:4:42)
-    at R3Injector.hydrate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11438:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11258:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25013:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/artists-list/artists-list.component.spec.ts:23:23)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
-  </testcase>
-  <testcase name="TracksService should be created" time="0.009" classname="unit.TracksService">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[TracksService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'TracksService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[TracksService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
-    at ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
-    at Object.TracksService_Factory [as factory] (ng:///TracksService/ɵfac.js:4:41)
-    at R3Injector.hydrate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11438:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11258:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at TestBedRender3.inject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:1686:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/services/tracks.service.spec.ts:14:21)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
-  </testcase>
+  <testcase name="TrackDurationPipe should transform a time" time="0.001" classname="unit.TrackDurationPipe"/>
+  <testcase name="TrackDurationPipe should pad minutes on time" time="0" classname="unit.TrackDurationPipe"/>
   <testcase name="TrackDurationPipe create an instance" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0.013" classname="unit.AppComponent"/>
-  <testcase name="AppComponent should create the app" time="0.008" classname="unit.AppComponent"/>
-  <testcase name="AppComponent should render title" time="0.005" classname="unit.AppComponent">
-    <failure type="">TypeError: Cannot read properties of null (reading 'textContent')
-    at UserContext.&lt;anonymous&gt; (src/app/app.component.spec.ts:33:51)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
-    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
-    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
-    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
-    at &lt;Jasmine&gt;
-</failure>
+  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe"/>
+  <testcase name="ArtistsListComponent should create" time="0" classname="unit.ArtistsListComponent">
+    <skipped/>
   </testcase>
-  <testcase name="PageNotFoundComponent should create" time="0.006" classname="unit.PageNotFoundComponent"/>
-  <testcase name="AlbumsService should be created" time="0.007" classname="unit.AlbumsService">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[AlbumsService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'AlbumsService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[AlbumsService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
-    at ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
-    at Object.AlbumsService_Factory [as factory] (ng:///AlbumsService/ɵfac.js:4:41)
-    at R3Injector.hydrate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11438:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11258:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at TestBedRender3.inject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:1686:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/services/albums.service.spec.ts:14:21)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
+  <testcase name="ArtistDetailsComponent should create" time="0" classname="unit.ArtistDetailsComponent">
+    <skipped/>
   </testcase>
-  <testcase name="ArtistsService should be created" time="0.003" classname="unit.ArtistsService">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistsService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ArtistsService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistsService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
-    at ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
-    at Object.ArtistsService_Factory [as factory] (ng:///ArtistsService/ɵfac.js:4:42)
-    at R3Injector.hydrate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11438:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11258:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at TestBedRender3.inject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/testing.js:1686:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/services/artists.service.spec.ts:14:21)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
+  <testcase name="AlbumsService should be created" time="0" classname="unit.AlbumsService">
+    <skipped/>
+  </testcase>
+  <testcase name="NavbarComponent should create" time="0" classname="unit.NavbarComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should create the app" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should render title" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="TracksService should be created" time="0" classname="unit.TracksService">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistsService should be created" time="0" classname="unit.ArtistsService">
+    <skipped/>
+  </testcase>
+  <testcase name="AlbumYearPipe create an instance" time="0" classname="unit.AlbumYearPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="PageNotFoundComponent should create" time="0" classname="unit.PageNotFoundComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe create an instance" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="BaseHttpService should be created" time="0" classname="unit.BaseHttpService">
+    <skipped/>
   </testcase>
   <system-out>
     <![CDATA[
