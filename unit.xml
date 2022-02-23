@@ -1,106 +1,160 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T10:44:45" id="0" hostname="innoflash" tests="35" errors="0" failures="3" time="0.319">
+<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T11:42:27" id="0" hostname="innoflash" tests="46" errors="0" failures="0" time="0.164">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"/>
   </properties>
-  <testcase name="AlbumsService should get artist albums" time="0.027" classname="unit.AlbumsService"/>
-  <testcase name="AlbumsService should be created" time="0.007" classname="unit.AlbumsService"/>
-  <testcase name="ArtistsService should be created" time="0.006" classname="unit.ArtistsService"/>
-  <testcase name="ArtistsService should search for artists" time="0" classname="unit.ArtistsService">
+  <testcase name="ArtistsListComponent Showing of artists should show 10 artists on the screen" time="0.083" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show one artist" time="0.011" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist image" time="0.011" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should navigate to the artist details page" time="0.011" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist`s number of albums" time="0.009" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show name on an h5" time="0.008" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists Show one artist on card should show artist fan count" time="0.005" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent Showing of artists should hide loading and error when artists are found" time="0.006" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent should show results not found if none are found" time="0.006" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent should load artists from the server when page loads" time="0.006" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent should show loading when data is still pending" time="0.004" classname="unit.ArtistsListComponent"/>
+  <testcase name="ArtistsListComponent should create" time="0.004" classname="unit.ArtistsListComponent"/>
+  <testcase name="NavbarComponent should be inside a nav tag" time="0" classname="unit.NavbarComponent">
     <skipped/>
   </testcase>
-  <testcase name="ArtistsService should get artist details" time="0.007" classname="unit.ArtistsService"/>
-  <testcase name="TracksService should be created" time="0.006" classname="unit.TracksService"/>
-  <testcase name="TracksService should get artist tracks" time="0.005" classname="unit.TracksService"/>
-  <testcase name="PageNotFoundComponent should create" time="0.028" classname="unit.PageNotFoundComponent"/>
-  <testcase name="TrackDurationPipe should transform a time" time="0.001" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe should pad minutes on time" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe create an instance" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="AlbumYearPipe should get a year from the release date" time="0.001" classname="unit.AlbumYearPipe"/>
-  <testcase name="AlbumYearPipe create an instance" time="0" classname="unit.AlbumYearPipe"/>
-  <testcase name="ArtistFanCountPipe create an instance" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should show 1 fan when artist has one" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should show no fans if non provided" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should format thousands of fans to K fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should not format less than 1000 fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should format billions of fans to B fans" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should format millions of fans to M fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="BaseHttpService should be created" time="0.003" classname="unit.BaseHttpService"/>
-  <testcase name="BaseHttpService should append /api to the given route." time="0.004" classname="unit.BaseHttpService"/>
-  <testcase name="AppComponent should render title" time="0.084" classname="unit.AppComponent">
-    <failure type="">TypeError: Cannot read properties of null (reading 'textContent')
-    at UserContext.&lt;anonymous&gt; (src/app/app.component.spec.ts:33:51)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:371:1)
-    at Zone.run (node_modules/zone.js/dist/zone-evergreen.js:134:1)
-    at runInTestZone (node_modules/zone.js/dist/zone-testing.js:581:1)
-    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/dist/zone-testing.js:596:1)
-    at &lt;Jasmine&gt;
-</failure>
+  <testcase name="NavbarComponent should have an input with reactive forms" time="0" classname="unit.NavbarComponent">
+    <skipped/>
   </testcase>
-  <testcase name="AppComponent should create the app" time="0.006" classname="unit.AppComponent"/>
-  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0.007" classname="unit.AppComponent"/>
-  <testcase name="ArtistDetailsComponent should create" time="0.042" classname="unit.ArtistDetailsComponent">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
-  NullInjectorError: No provider for ActivatedRoute!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActivatedRoute', 'ActivatedRoute' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
-  NullInjectorError: No provider for ActivatedRoute!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25013:1)
-    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
-    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
-    at ɵɵdirectiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14693:1)
-    at NodeInjectorFactory.ArtistDetailsComponent_Factory [as factory] (ng:///ArtistDetailsComponent/ɵfac.js:4:50)
-    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/artist-details/artist-details.component.spec.ts:23:23)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
-  </testcase>
-  <testcase name="ArtistsListComponent should create" time="0.017" classname="unit.ArtistsListComponent">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistsService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ArtistsService', 'HttpClient', 'HttpClient' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistsService -&gt; HttpClient -&gt; HttpClient]: 
-  NullInjectorError: No provider for HttpClient!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at injectInjectorOnly (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4776:1)
-    at ɵɵinject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:4780:1)
-    at Object.ArtistsService_Factory [as factory] (ng:///ArtistsService/ɵfac.js:4:42)
-    at R3Injector.hydrate (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11438:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11258:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25013:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/artists-list/artists-list.component.spec.ts:23:23)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
-  </testcase>
-  <testcase name="NavbarComponent should initializes the searchForm" time="0.019" classname="unit.NavbarComponent"/>
   <testcase name="NavbarComponent should emit a value when one is entered" time="0" classname="unit.NavbarComponent">
     <skipped/>
   </testcase>
-  <testcase name="NavbarComponent should have an input with reactive forms" time="0.01" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should have a form" time="0.009" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should have the logo titled Deezer" time="0.008" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should be inside a nav tag" time="0.009" classname="unit.NavbarComponent"/>
-  <testcase name="NavbarComponent should create" time="0.01" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should have a form" time="0" classname="unit.NavbarComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="NavbarComponent should have the logo titled Deezer" time="0" classname="unit.NavbarComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="NavbarComponent should create" time="0" classname="unit.NavbarComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="NavbarComponent should initializes the searchForm" time="0" classname="unit.NavbarComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should create the app" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should render title" time="0" classname="unit.AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistDetailsComponent should create" time="0" classname="unit.ArtistDetailsComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackDurationPipe should transform a time" time="0" classname="unit.TrackDurationPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackDurationPipe should pad minutes on time" time="0" classname="unit.TrackDurationPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="TrackDurationPipe create an instance" time="0" classname="unit.TrackDurationPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="BaseHttpService should be created" time="0" classname="unit.BaseHttpService">
+    <skipped/>
+  </testcase>
+  <testcase name="BaseHttpService should append /api to the given route." time="0" classname="unit.BaseHttpService">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistsService should be created" time="0" classname="unit.ArtistsService">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistsService should get artist details" time="0" classname="unit.ArtistsService">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistsService should search for artists" time="0" classname="unit.ArtistsService">
+    <skipped/>
+  </testcase>
+  <testcase name="AlbumYearPipe should get a year from the release date" time="0" classname="unit.AlbumYearPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="AlbumYearPipe create an instance" time="0" classname="unit.AlbumYearPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe create an instance" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should format millions of fans to M fans" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should show 1 fan when artist has one" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should show no fans if non provided" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should format billions of fans to B fans" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should format thousands of fans to K fans" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistFanCountPipe should not format less than 1000 fans" time="0" classname="unit.ArtistFanCountPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="AlbumsService should get artist albums" time="0" classname="unit.AlbumsService">
+    <skipped/>
+  </testcase>
+  <testcase name="AlbumsService should be created" time="0" classname="unit.AlbumsService">
+    <skipped/>
+  </testcase>
+  <testcase name="TracksService should get artist tracks" time="0" classname="unit.TracksService">
+    <skipped/>
+  </testcase>
+  <testcase name="TracksService should be created" time="0" classname="unit.TracksService">
+    <skipped/>
+  </testcase>
+  <testcase name="PageNotFoundComponent should create" time="0" classname="unit.PageNotFoundComponent">
+    <skipped/>
+  </testcase>
   <system-out>
-    <![CDATA[
+    <![CDATA[Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 98.0.4758.102 (Linux x86_64) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+
 ]]>
   </system-out>
   <system-err/>
