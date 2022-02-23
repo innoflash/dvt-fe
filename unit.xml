@@ -1,11 +1,34 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T09:50:30" id="0" hostname="innoflash" tests="29" errors="0" failures="4" time="0.213">
+<testsuite name="Chrome 98.0.4758.102 (Linux x86_64)" package="unit" timestamp="2022-02-23T10:44:45" id="0" hostname="innoflash" tests="35" errors="0" failures="3" time="0.319">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"/>
   </properties>
-  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0.034" classname="unit.AppComponent"/>
-  <testcase name="AppComponent should create the app" time="0.006" classname="unit.AppComponent"/>
-  <testcase name="AppComponent should render title" time="0.07" classname="unit.AppComponent">
+  <testcase name="AlbumsService should get artist albums" time="0.027" classname="unit.AlbumsService"/>
+  <testcase name="AlbumsService should be created" time="0.007" classname="unit.AlbumsService"/>
+  <testcase name="ArtistsService should be created" time="0.006" classname="unit.ArtistsService"/>
+  <testcase name="ArtistsService should search for artists" time="0" classname="unit.ArtistsService">
+    <skipped/>
+  </testcase>
+  <testcase name="ArtistsService should get artist details" time="0.007" classname="unit.ArtistsService"/>
+  <testcase name="TracksService should be created" time="0.006" classname="unit.TracksService"/>
+  <testcase name="TracksService should get artist tracks" time="0.005" classname="unit.TracksService"/>
+  <testcase name="PageNotFoundComponent should create" time="0.028" classname="unit.PageNotFoundComponent"/>
+  <testcase name="TrackDurationPipe should transform a time" time="0.001" classname="unit.TrackDurationPipe"/>
+  <testcase name="TrackDurationPipe should pad minutes on time" time="0" classname="unit.TrackDurationPipe"/>
+  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe"/>
+  <testcase name="TrackDurationPipe create an instance" time="0" classname="unit.TrackDurationPipe"/>
+  <testcase name="AlbumYearPipe should get a year from the release date" time="0.001" classname="unit.AlbumYearPipe"/>
+  <testcase name="AlbumYearPipe create an instance" time="0" classname="unit.AlbumYearPipe"/>
+  <testcase name="ArtistFanCountPipe create an instance" time="0" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should show 1 fan when artist has one" time="0" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should show no fans if non provided" time="0" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should format thousands of fans to K fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should not format less than 1000 fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should format billions of fans to B fans" time="0" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="ArtistFanCountPipe should format millions of fans to M fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
+  <testcase name="BaseHttpService should be created" time="0.003" classname="unit.BaseHttpService"/>
+  <testcase name="BaseHttpService should append /api to the given route." time="0.004" classname="unit.BaseHttpService"/>
+  <testcase name="AppComponent should render title" time="0.084" classname="unit.AppComponent">
     <failure type="">TypeError: Cannot read properties of null (reading 'textContent')
     at UserContext.&lt;anonymous&gt; (src/app/app.component.spec.ts:33:51)
     at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
@@ -17,35 +40,9 @@
     at &lt;Jasmine&gt;
 </failure>
   </testcase>
-  <testcase name="BaseHttpService should append /api to the given route." time="0.004" classname="unit.BaseHttpService"/>
-  <testcase name="BaseHttpService should be created" time="0.003" classname="unit.BaseHttpService"/>
-  <testcase name="NavbarComponent should create" time="0.02" classname="unit.NavbarComponent">
-    <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[FormBuilder -&gt; FormBuilder]: 
-  NullInjectorError: No provider for FormBuilder!
-error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'FormBuilder', 'FormBuilder' ] })
-NullInjectorError: R3InjectorError(DynamicTestModule)[FormBuilder -&gt; FormBuilder]: 
-  NullInjectorError: No provider for FormBuilder!
-    at NullInjector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11102:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at R3Injector.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:11269:1)
-    at NgModuleRef$1.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25299:1)
-    at Object.get (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:25013:1)
-    at lookupTokenUsingModuleInjector (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3389:1)
-    at getOrCreateInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3501:1)
-    at ɵɵdirectiveInject (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14693:1)
-    at NodeInjectorFactory.NavbarComponent_Factory [as factory] (ng:///NavbarComponent/ɵfac.js:4:43)
-    at getNodeInjectable (node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:3596:1)
-</failure>
-    <failure type="">Error: Expected undefined to be truthy.
-    at &lt;Jasmine&gt;
-    at UserContext.&lt;anonymous&gt; (src/app/artists/navbar/navbar.component.spec.ts:23:23)
-    at ZoneDelegate.invoke (node_modules/zone.js/dist/zone-evergreen.js:372:1)
-    at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
-</failure>
-  </testcase>
-  <testcase name="AlbumsService should get artist albums" time="0.012" classname="unit.AlbumsService"/>
-  <testcase name="AlbumsService should be created" time="0.002" classname="unit.AlbumsService"/>
-  <testcase name="ArtistDetailsComponent should create" time="0.026" classname="unit.ArtistDetailsComponent">
+  <testcase name="AppComponent should create the app" time="0.006" classname="unit.AppComponent"/>
+  <testcase name="AppComponent should have as title 'musicdb-app-angular'" time="0.007" classname="unit.AppComponent"/>
+  <testcase name="ArtistDetailsComponent should create" time="0.042" classname="unit.ArtistDetailsComponent">
     <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; ActivatedRoute]: 
   NullInjectorError: No provider for ActivatedRoute!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ActivatedRoute', 'ActivatedRoute' ] })
@@ -69,14 +66,7 @@ NullInjectorError: R3InjectorError(DynamicTestModule)[ActivatedRoute -&gt; Activ
     at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
 </failure>
   </testcase>
-  <testcase name="ArtistFanCountPipe should format billions of fans to B fans" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should show no fans if non provided" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe create an instance" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should format thousands of fans to K fans" time="0.001" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should format millions of fans to M fans" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should show 1 fan when artist has one" time="0.001" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistFanCountPipe should not format less than 1000 fans" time="0" classname="unit.ArtistFanCountPipe"/>
-  <testcase name="ArtistsListComponent should create" time="0.016" classname="unit.ArtistsListComponent">
+  <testcase name="ArtistsListComponent should create" time="0.017" classname="unit.ArtistsListComponent">
     <failure type="">NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistsService -&gt; HttpClient -&gt; HttpClient]: 
   NullInjectorError: No provider for HttpClient!
 error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ArtistsService', 'HttpClient', 'HttpClient' ] })
@@ -100,20 +90,15 @@ NullInjectorError: R3InjectorError(DynamicTestModule)[ArtistsService -&gt; HttpC
     at ProxyZoneSpec.push.QpwO.ProxyZoneSpec.onInvoke (node_modules/zone.js/dist/zone-testing.js:301:1)
 </failure>
   </testcase>
-  <testcase name="PageNotFoundComponent should create" time="0.005" classname="unit.PageNotFoundComponent"/>
-  <testcase name="AlbumYearPipe create an instance" time="0" classname="unit.AlbumYearPipe"/>
-  <testcase name="AlbumYearPipe should get a year from the release date" time="0" classname="unit.AlbumYearPipe"/>
-  <testcase name="ArtistsService should search for artists" time="0" classname="unit.ArtistsService">
+  <testcase name="NavbarComponent should initializes the searchForm" time="0.019" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should emit a value when one is entered" time="0" classname="unit.NavbarComponent">
     <skipped/>
   </testcase>
-  <testcase name="ArtistsService should get artist details" time="0.002" classname="unit.ArtistsService"/>
-  <testcase name="ArtistsService should be created" time="0.002" classname="unit.ArtistsService"/>
-  <testcase name="TrackDurationPipe should transform a time" time="0.001" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe should pad minutes on time" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe create an instance" time="0.001" classname="unit.TrackDurationPipe"/>
-  <testcase name="TrackDurationPipe should pad seconds on time" time="0" classname="unit.TrackDurationPipe"/>
-  <testcase name="TracksService should be created" time="0.002" classname="unit.TracksService"/>
-  <testcase name="TracksService should get artist tracks" time="0.005" classname="unit.TracksService"/>
+  <testcase name="NavbarComponent should have an input with reactive forms" time="0.01" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should have a form" time="0.009" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should have the logo titled Deezer" time="0.008" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should be inside a nav tag" time="0.009" classname="unit.NavbarComponent"/>
+  <testcase name="NavbarComponent should create" time="0.01" classname="unit.NavbarComponent"/>
   <system-out>
     <![CDATA[
 ]]>
