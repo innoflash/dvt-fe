@@ -7,7 +7,7 @@ import { BaseHttpService } from '../../shared/services/base-http.service';
   providedIn: 'root'
 })
 export abstract class LoadsArtistDataService<T> extends BaseHttpService {
-  protected abstract resource: string;
+  protected abstract readonly resource: string;
 
   /**
    * Fetches the data for the given resource for the given artist.

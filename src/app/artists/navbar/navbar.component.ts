@@ -8,17 +8,16 @@ import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  public searchForm!: FormGroup;
+  public readonly searchForm: FormGroup;
   @Output() public searchChange = new EventEmitter<string>();
 
   constructor(private fb: FormBuilder) {
+    this.searchForm = fb.group({
+      searchTerm: ''
+    });
   }
 
   ngOnInit(): void {
-    this.searchForm = this.fb.group({
-      searchTerm: ''
-    });
-
     this.searchForm.get('searchTerm')?.valueChanges
       .pipe(
         debounceTime(500),
